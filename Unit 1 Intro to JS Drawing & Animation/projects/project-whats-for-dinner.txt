@@ -1,0 +1,42 @@
+background(209, 170, 121); // wooden table
+fill(183, 240, 240); // color of plate
+ellipse(200, 200, 350, 350); // plate
+fill(255, 255, 255); // color of corner
+ellipse(200, 200, 300, 300); // corner
+
+
+// watermelon
+strokeWeight(6);
+stroke(25, 153, 19);
+fill(189, 19, 19);
+arc(258,144,135,212,49,136);
+
+// watermelon
+strokeWeight(6);
+stroke(25, 153, 19);
+fill(189, 19, 19);
+arc(258,144,135,212,49,136);
+
+//cheese
+strokeWeight(2);
+stroke(0, 0, 0);
+fill(204, 164, 4);
+arc(129,273,127,94,2,56);
+fill(background); // holes
+ellipse(170,287,10,10);
+arc(154,301,15,15, -127, 42);
+arc(154,273,15,15, -346, -185);
+
+//cherry 
+strokeWeight(1);
+fill(150, 32, 32);
+ellipse(146,165,20,20);
+line(146,157,159,100);
+
+ellipse(170,165,20,20);
+line(171,155,159,100);
+
+fill(74, 168, 74);
+ellipse(135,103,50,10);
+line(159,102,111,103);
+
