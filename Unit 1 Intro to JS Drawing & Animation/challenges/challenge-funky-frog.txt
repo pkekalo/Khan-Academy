@@ -11,3 +11,14 @@ ellipse(x + 50, y - 50, 40, 40); // right eye socket
 fill(255, 255, 255); // for the whites of the eyes!
 ellipse(x - 50, y - 50, 30, 30); // left eyeball
 ellipse(x + 50, y - 50, 30, 30); // right eyeball
+
+
+fill(255, 0, 0);
+ellipse(x,y,90, 20);
+
+fill(13, 5, 161);
+rect(x+50,y-50, 10, 10);
+rect(x-50,y-50, 10, 10);
+
+
+
