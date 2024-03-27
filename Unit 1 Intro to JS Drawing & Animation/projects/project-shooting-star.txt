@@ -1,10 +1,30 @@
 var xPos = 200;
 var yPos = 200;
+var xPos2 = 200;
 
 draw = function() {
     background(29, 40, 115);
     fill(255, 242, 0);
     ellipse(xPos, yPos, 10, 10);
+    
+    xPos++;
+    yPos++;
+    
+    //reset
+    if (xPos >= 400 || yPos >= 400) {
+        xPos = -5;
+        yPos = 200;
+        xPos2 = 405;
+        
+    }
+    
+    fill(255, 0, 0);
+    ellipse(xPos2, 54, 33, 34);
+    xPos2 = xPos2 - 3;
+    
+    fill(255, 255, 255);
+    ellipse(xPos2, yPos, 57, 68);
+    
 };
 
 
