@@ -1,11 +1,82 @@
 var bodyX = 200;
-var bodyY = 220;
-var bodyW = 118;
+var bodyY = 210;
+var bodyW = 139;
+var bodyH = 115;
+var faceH = 51;
 var faceW = bodyW/2;
+var beltLine = 234;
+var beltX = 138;
+var beltW = 128;
+var beltH = 15;
+var groundLevel = 330;
+var eyesWide = 20;
+var eyesInside = 12;
+
+
+
+//A ninja turtle
 
 draw = function() {
-    background(207, 254, 255);
-    fill(240, 209, 36);
-    ellipse(bodyX, bodyY, bodyW, 106); // body?
-    ellipse(bodyX, bodyY-70, faceW, 47); // face?
+    background(255, 234, 209);
+    // Draw body
+
+    fill (92, 44, 0);
+    ellipse(bodyX, bodyY, bodyW+20, bodyH); // Body
+          
+    fill(47, 181, 92); //Green color
+    ellipse(bodyX, bodyY, bodyW, bodyH); // Body
+
+    
+    ellipse(bodyX, bodyY-70, faceW, faceH); // face
+    
+//legs 
+line(201, beltLine, 128, groundLevel);
+line(244, beltLine, 225, groundLevel);
+
+//belt
+fill(0, 0, 0);
+rect(beltX,beltLine, beltW, beltH); //belt
+
+//mask
+rect(167,129, 70,13);
+
+//eyes
+ellipse(180,133,eyesWide, eyesWide);
+ellipse(222,133,eyesWide, eyesWide);
+
+//eyes
+fill(0, 234, 255);
+ellipse(180,133,eyesInside, eyesInside);
+ellipse(222,133,eyesInside, eyesInside);
+
+// animate eyes
+
+if (eyesWide <= 21) {
+    for (var i = eyesWide; i <= 32; i++)  {
+    eyesWide++;
+
+    }
+} else {
+    eyesWide = 20;
+}
+
+
+fill(255, 225, 0);
+ellipse(bodyX, bodyY,125,40);
+
+//arms
+line(138, 187, 56, 98);
+line(263, 187, 56, 98);
+
+
+// a sword
+fill(0, 0, 0);
+rect(58,99,9,20);
+triangle(77,98,48,96,19,8);
+fill(0, 204, 255);
+ellipse (58,97,52,7);
+
+
+
+
 };
