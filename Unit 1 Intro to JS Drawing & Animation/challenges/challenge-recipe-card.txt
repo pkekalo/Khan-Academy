@@ -1,9 +1,11 @@
-var recipeTitle = "Bread";
-var recipeServings = 2;
-var recipeIngredients = ["Flour", "Water"];
+var burger = {
+    recipeTitle: "Burger",
+    recipeServings : 1,
+    recipeIngredients : ["Bun", "Beef Patty", "Cheese", "Lettuce", "Tomato", "Onion", "Pickles", "Keutchup", "Salt"]
+};
 
 fill(26, 26, 26);
 textSize(20);
-text(recipeTitle, 10, 23);
-text("Serves: " + recipeServings, 10, 55);
-text("Ingredients: " + recipeIngredients, 10, 85);
+text(burger.recipeTitle, 10, 23);
+text("Serves: " + burger.recipeServings, 10, 55);
+text("Ingredients: " + burger.recipeIngredients, 10, 85);
