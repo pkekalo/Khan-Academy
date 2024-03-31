@@ -1,0 +1,12 @@
+var paintBrush = {
+    x: 200,
+    y: 200,
+    img: getImage("avatars/leaf-green")
+};
+
+var paintCanvas = function() {
+    imageMode(CENTER);
+    image(paintBrush.img, paintBrush.x, paintBrush.y);
+};
+
+paintCanvas();
