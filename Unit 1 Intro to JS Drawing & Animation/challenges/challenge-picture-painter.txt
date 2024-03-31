@@ -1,7 +1,7 @@
 var paintBrush = {
-    x: 200,
-    y: 200,
-    img: getImage("avatars/leaf-green")
+    x: 100,
+    y: 100,
+    img: getImage("avatars/mr-pink")
 };
 
 var paintCanvas = function() {
@@ -10,3 +10,12 @@ var paintCanvas = function() {
 };
 
 paintCanvas();
+
+
+mouseMoved = function() {
+    //change x and y MauseX and mouseY
+    paintBrush.x = mouseX;
+    paintBrush.y = mouseY;
+    paintCanvas();
+};
+
